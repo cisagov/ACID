@@ -1,0 +1,25 @@
+#fields	technique	protocol	ind
+t0801	bacnet	Function: subscribe_cov
+t0814	bacnet	Function: device_communication_control
+t0835	bacnet	Function: create_object,Function: delete_object
+t0836	bacnet	Function: add_list_element,Function: remove_list_element,Function: confirmed_cov_notification
+t0843	bacnet	Function: write-property - [Object: program Property: program-change Value: Load]
+t0845	bacnet	Function: atomic_read_file
+t0846	bacnet	Function: i_am
+t0855	bacnet	Function: confirmed_private_transfer,Function: unconfirmed_private_transfer
+t0858	bacnet	Function: reinitialize_device
+t0861	bacnet	Function: read_property,Function: read_property_conditional,Function: read_property_multiple
+t0878	bacnet	Function: acknowledge_alarm
+t0888	bacnet	Function: who_has,Function: i_have
+t0889	bacnet	Function: atomic_write_file
+t0836	cip	Class: 0x6a - Service: 0x51
+t0843	cip	Class: 0xac - Service: 0x08
+t0858	cip	Class: 0x8e - Service: 0x06,Class: 0x8e - Service: 0x07
+handshake	cip	Class: 0x8e - Service: 0x5c
+forcing	cip	Class: 0x68 - Service: 0x4d,Class: 0x68 - Service: 0x4e,Class: 0x69 - Service: 0x4d,Class: 0x69 - Service: 0x4e
+t0836	s7comm	Function Code: 0x01 Subfunction Code: 0x08 - Modify Variable
+t0843	s7comm	Function Code: 0x1a - Request Download
+t0845	s7comm	Function Code: 0x1d - Start Upload
+t0858	s7comm	Function Code: 0x00 - Push: Mode-Transition
+handshake	s7comm	Function Code: 0xf0 - Setup Communications
+forcing	s7comm	Function Code: 0x01 Subfunction Code: 0x09 - Force

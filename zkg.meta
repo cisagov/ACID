@@ -1,0 +1,19 @@
+[package]
+script_dir = scripts
+summary = ACID is a collection of OT protocol indicator scripts focused on ATT&CK for ICS behaviors.
+tags = ics, OT, attack, ATT&CK, mitre, cisa, OT protocol, detection, notices, input, logging, CIP, S7comm, bacnet, icsnpp
+credits = Jake Steele <jsteele@mitre.org>, Jack Cyprus <jcyprus@mitre.org>, Otis Alexander <oalexander@mitre.org>
+description = ATT&CK-based Control-system Indicator Detection (ACID) is a collection of Zeek scripts designed to detect 
+	ATT&CK for ICS behaviors on OT protocols. These events are reported through the Zeek Notice framework. 
+depends = 
+	zeek >=4.0.0
+
+[template]
+source = https://github.com/zeek/package-template
+version = v3.1.0
+zkg_version = 2.13.0
+
+[template_vars]
+name = ACID
+namespace = MITRE
+
