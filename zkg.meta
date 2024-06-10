@@ -7,6 +7,9 @@ description = ATT&CK-based Control-system Indicator Detection (ACID) is a collec
 	ATT&CK for ICS behaviors on OT protocols. These events are reported through the Zeek Notice framework. 
 depends = 
 	zeek >=4.0.0
+	http://github.com/cisagov/icsnpp-bacnet *
+	http://github.com/cisagov/icsnpp-enip *
+	http://github.com/cisagov/icsnpp-s7comm *
 
 [template]
 source = https://github.com/zeek/package-template
