@@ -115,7 +115,7 @@ export
 	function ics_t0878_log( uid : string, id : conn_id, evnt : string, protocol : string ) : bool
 	{
 		NOTICE([$note=ATTACKICS::Impair_Process,
-			$msg=cat("Indicator: ", ACID::attack_info["t0847"], " ", "(",evnt,")" ),
+			$msg=cat("Indicator: ", ACID::attack_info["t0878"], " ", "(",evnt,")" ),
 			$sub=protocol,
 			$uid=uid,
 			$id=id]

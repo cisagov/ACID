@@ -2,6 +2,11 @@ module ACID;
 
 export {
 
+    # Official mDOTS names:
+    #   - "mDOTS_config_change"
+    option enabled_mDOTS : set[string] = {"mDOTS_config_change"};
+
+
     # Option to control how input file indicators are loaded:
     # True: enables dynamic loading for post-deployment changes.
     # False: loads indicators at initialization and will not update with changes.
