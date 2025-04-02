@@ -2,7 +2,7 @@
 t0801	bacnet	Function: subscribe_cov
 t0814	bacnet	Function: device_communication_control
 t0835	bacnet	Function: create_object,Function: delete_object
-t0836	bacnet	Function: add_list_element,Function: remove_list_element,Function: confirmed_cov_notification
+t0836	bacnet	Function: add_list_element,Function: remove_list_element
 t0843	bacnet	Function: write-property - [Object: program Property: program-change Value: Load]
 t0845	bacnet	Function: atomic_read_file
 t0846	bacnet	Function: i_am

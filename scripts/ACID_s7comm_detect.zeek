@@ -4,7 +4,7 @@ module ACID;
 # ICSNPP::s7comm parser event
 event S7COMM::log_s7comm(rec: S7COMM::S7COMM){
 
-    local s7comm_rec = copy(rec);
+    local s7comm_rec = rec;
     
     # Enables option control via the ACID_ics_options configurations.
     # This is used to enable / disable all ACID S7Comm notice events.

@@ -5,7 +5,7 @@ module ACID;
 event Bacnet::log_bacnet(rec: Bacnet::BACnet_Header){
 
 
-	local bacnet_rec = copy(rec);
+	local bacnet_rec = rec;
 
     # Enables option control via the ACID_ics_options configurations.
     # This is used to enable / disable all ACID BACNet notice events.
@@ -112,6 +112,7 @@ global program_value_lookup: table[string] of string =
 # ICSNPP::BACnet parser event
 event Bacnet::log_bacnet_property(rec: Bacnet::BACnet_Property){
 
+	# rec copied since we will be overwriting values
 	local bacnet_rec = copy(rec);
 
 	local bacnet_evnt = "";

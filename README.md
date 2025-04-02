@@ -22,12 +22,12 @@ Below are two methods of installing ACID. The first is through the Zeek package 
 
 ACID is available in the zkg package format and can be installed with the commands below :
 
-*inclusion into Zeek package source in progress*
 ```
-mkdir ACID && cd $_
-git clone https://github.com/cisagov/ACID.git .
-zkg install .
+zkg refresh
+zkg install ACID
 ```
+
+If ZKG is already configured to load packages within your site's *local.zeek* file, the ACID code will automatically loaded into Zeek and can be confirmed with the commands below. Otherwise please refer to the [ZKG Guide](https://docs.zeek.org/projects/package-manager/en/stable/quickstart.html) for more information.
 
 Verifying that the zkg package has been installed can be done by running `zeek -N`. If the package has been installed successfully, users will see `MITRE::ACID` displayed under installed packages. 
 
@@ -279,10 +279,7 @@ To modify the signatures for a device configuration change, users would go into 
 - New indicators must be added with no spaces between the end of the prior indicator and start of the new one, however they may be used within a given indicator. For example, `indicator1: one,indicator2: two`. 
 
 
-
-## Features to come
-
-### Incident Summaries:
+## Incident Summaries [Feature Branch](https://github.com/cisagov/ACID/tree/feature/summary):
 
 Building on top of the ATT&CK technique-to-protocol behavior reports defined above, we have built customizable features to associate related ACID events within sessions. This capability will allow you to set a timeframe to aggregate and report multiple indicators under a single notice event. 
 
@@ -295,6 +292,9 @@ NOTICE([$note=ACID::Incident_Summary,
     $id=ACID::tr[c$uid]$c_id]
 );
 ```
+
+## Features to come
+
 ### New mDOTS packages
 
 The initial set of indicators released for ACID focuses primarily on device and configuration management behaviors. In the future we are looking to build out signatures focused on areas such as remote access to ICS, process alarm visibility, file transfers, and other detection areas.

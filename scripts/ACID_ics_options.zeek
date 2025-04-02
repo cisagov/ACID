@@ -79,12 +79,12 @@ export {
     #T0888 Remote System Information Discovery
     option s7comm_t0888_detect = T;
     option cip_t0888_detect = T;
-    option bacnet_t0888_detect = T;
+    option bacnet_t0888_detect = F;
 
     #T0846 Remote System Discovery
     option s7comm_t0846_detect = T;
     option cip_t0846_detect = T;
-    option bacnet_t0846_detect = T;
+    option bacnet_t0846_detect = F;
 
     #T0861 Point & Tag Identification
     option s7comm_t0861_detect = T;

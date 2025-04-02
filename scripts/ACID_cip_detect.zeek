@@ -4,7 +4,7 @@ module ACID;
 # ICSNPP::enip parser event
 event ENIP::log_cip(rec: ENIP::CIP_Header){
 
-	local cip_rec = copy(rec);
+	local cip_rec = rec;
 
     # Enables option control via the ACID_ics_options configurations.
     # This is used to enable / disable all ACID CIP notice events.

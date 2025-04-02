@@ -3,7 +3,7 @@ module ACID;
 export 
 {
 	
-	# T0861 Remote System Information Discovery
+	# T0861 Point & Tag Identification
 	function ics_t0861_log( uid : string, id : conn_id, evnt : string, protocol : string ) : bool
 	{
 		NOTICE([$note=ATTACKICS::Collection,
@@ -15,7 +15,7 @@ export
 	    return T;
 	}
 
-	# T0846 Remote System Information Discovery
+	# T0846 Remote System Discovery
 	function ics_t0846_log( uid : string, id : conn_id, evnt : string, protocol : string ) : bool
 	{
 		NOTICE([$note=ATTACKICS::Collection,
