@@ -279,7 +279,7 @@ To modify the signatures for a device configuration change, users would go into 
 - New indicators must be added with no spaces between the end of the prior indicator and start of the new one, however they may be used within a given indicator. For example, `indicator1: one,indicator2: two`. 
 
 
-## Incident Summaries [Feature Branch](https://github.com/cisagov/ACID/tree/feature/summary):
+## Incident Summaries:
 
 Building on top of the ATT&CK technique-to-protocol behavior reports defined above, we have built customizable features to associate related ACID events within sessions. This capability will allow you to set a timeframe to aggregate and report multiple indicators under a single notice event. 
 
